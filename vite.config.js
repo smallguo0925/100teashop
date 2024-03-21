@@ -15,14 +15,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-					$injectedColor: orange;
-					@import "./src/assets/scss/core/variables.scss";
-				`,
-      }
-    }
-  },
 })
