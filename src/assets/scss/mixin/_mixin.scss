@@ -1,0 +1,60 @@
+// RWD
+@mixin M() {
+    @media all and (min-width: 480px) {
+        //Mobile 480px;
+        @content;
+    }
+}
+
+@mixin T() {
+    @media all and (min-width: 768px) {
+        //Tablet 768px;
+        @content;
+    }
+}
+
+@mixin PC() {
+    @media all and (min-width: 1024px) {
+        //PC 1024px
+        @content;
+    }
+}
+
+
+//格線系統
+@mixin grid($col, $b: null) {
+    @if $b ==null {
+        @for $i from 1 through $col {
+            .col-#{$i} {
+                width: calc(100% / $col) * $i;
+            }
+        }
+    }
+
+    @else {
+        @for $i from 1 through $col {
+            .col-#{$b}-#{$i} {
+                width: calc(100% / $col) * $i;
+            }
+        }
+    }
+}
+
+//漢堡選單HOVER效果
+@mixin HeaderHover() {
+    font-size: 190px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    opacity: .3;
+}
+
+//字體
+@mixin h2(){
+    font-size: $h2;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .2rem;
+}
+.h2{
+    @include h2;
+}

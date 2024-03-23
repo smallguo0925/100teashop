@@ -3,6 +3,13 @@
 @import "base/var";
 @import "base/font";
 @import "base/color";
+//mixin
+
+@import "mixin/mixin";
 
 //layout
 @import "layout/MainHeader";
+
+
+//組件
+@import "components/grid";

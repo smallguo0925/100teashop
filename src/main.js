@@ -11,12 +11,14 @@ import router from './router'
 //引入FontAwesome
 import '@fortawesome/fontawesome-free/css/all.css';
 
-
+//引入view ui
+import ViewUIPlus from 'view-ui-plus'
+import "view-ui-plus/dist/styles/viewuiplus.css";
 
 const app = createApp(App)
 
 //設定全域的網站名稱
 app.use(createPinia())
 app.use(router)
-
+.use(ViewUIPlus)
 app.mount('#app')
