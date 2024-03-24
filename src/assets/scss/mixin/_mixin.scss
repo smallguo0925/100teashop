@@ -58,3 +58,11 @@
 .h2{
     @include h2;
 }
+@mixin text(){
+    font-size: $text;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .2rem;
+}
+.text{
+    @include text;
+}
