@@ -1,0 +1,11 @@
+#home{
+    background: #aaaaaadd url(/src/assets/images/background.svg) scroll repeat left 0 top 0 / 150%;
+    background-blend-mode: screen;
+    width: 100%;
+    .homeWrapper{
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    
+}

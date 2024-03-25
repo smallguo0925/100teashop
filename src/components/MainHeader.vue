@@ -1,12 +1,16 @@
 <template>
     <div id="header">
         <div class="headerWrapper">
-            <div class="logo_PC">
-                <img src="../assets/images/LOGO.svg" alt="headerLogo">
-            </div>
-            <div class="logo_mobile">
-                <img src="../assets/images/orange100.svg" alt="headerLogo">
-            </div>
+            <router-link to="/">
+                <div class="logo_PC">
+                    <img src="../assets/images/LOGO.svg" alt="headerLogo">
+                </div>
+            </router-link>
+            <router-link to="/">
+                <div class="logo_mobile">
+                    <img src="../assets/images/orange100.svg" alt="headerLogo">
+                </div>
+            </router-link>
             <div class="hamburger">
             <!-- 漢堡選單 -->
                 <li>
@@ -50,6 +54,8 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
+
 export default {
     data() {
         return {
